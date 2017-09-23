@@ -85,6 +85,12 @@ h2 {
     padding-right: 9px;
 }
 
+.sub {
+    font-weight: lighter;
+    color: #4d4d4d;
+    font-size: 23px;
+}
+
 footer {
     text-align: center;
 }

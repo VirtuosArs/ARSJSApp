@@ -11,6 +11,7 @@ myLink.onclick = function magicFlow() {
 
       var jsonObj1 = document.getElementById("myTextarea").value;
       var jsonObj = JSON.parse(jsonObj1);
+      console.log(jsonObj);
 
       var yearText = document.getElementById("yearVal").value;
       setDayName(yearText, ...jsonObj);
@@ -70,7 +71,7 @@ myLink.onclick = function magicFlow() {
   function jsonData() {
     var jsonObj1 = document.getElementById("myTextarea").value;
     if (jsonObj1 == "") {
-      if (confirm("Please Enter json data") == true) {
+      if (confirm("Please enter json data or enter your name and birthdate to create a valid JSON") == true) {
         document.getElementById('myTextarea').style.border =
           "thin solid red";
       } else {
