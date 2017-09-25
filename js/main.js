@@ -32,8 +32,7 @@ myLink.onclick = function magicFlow() {
           var count = container_div.getElementsByTagName('div').length;
           if (count == 1) {
             var fragment = create(count + " birthday");
-          }
-          else if (count == 0){
+          } else if (count == 0) {
             var fragment = create("No birthdays");
           } else {
             var fragment = create(count + " birthdays");
@@ -71,7 +70,9 @@ myLink.onclick = function magicFlow() {
   function jsonData() {
     var jsonObj1 = document.getElementById("myTextarea").value;
     if (jsonObj1 == "") {
-      if (confirm("Please enter json data or enter your name and birthdate to create a valid JSON") == true) {
+      if (confirm(
+          "1. Please enter json data or\n2. Copy the sample JSON data by clicking on the 'Copy to Clickboard' button or \n3. Enter your name and birthdate and click on 'Create JSON' to create a valid JSON"
+        ) == true) {
         document.getElementById('myTextarea').style.border =
           "thin solid red";
       } else {

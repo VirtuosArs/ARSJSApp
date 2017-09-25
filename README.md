@@ -40,4 +40,5 @@ Sample json data format
 ## Acknowledgments
 
 * [favicon image](https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png)
+* [Clipboard.min.js](https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js)
 * Hat tip to anyone who's code was used.
