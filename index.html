@@ -5,108 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Birthday Cal App</title>
+    <meta name="author" content="Ankush Sankhe">
+    <title>ARS Birthday Cal App</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
   </head>
   <body>
-    <h1 class="head">Birthday Cal</h1>
-    <h2>Find the day in which your birthday comes in any year which you want!!!</h2>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><i class="fa fa-github" aria-hidden="true"></i>  ARS Birthday Cal</a>
+        </div>
+      </div>
+    </nav>
+    <h2>Find the day in which your birthday comes in any year!!!</h2>
     <hr>
     <br><br>
-    <div id="wrapper">
-      <div class="card">
-        <h1 class="chead">MON</h1>
-        <div class="nested" id="Monday">
+    <div class="container">
+      <div id="wrapper">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">MON</h1>
+            <div class="well" id="MondayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Monday"></div>
+          </div>
         </div>
-        <h2 id="MondayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">TUE</h1>
-        <div class="nested" id="Tuesday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">TUE</h1>
+            <div class="well" id="TuesdayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Tuesday"></div>
+          </div>
         </div>
-        <h2 id="TuesdayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">WED</h1>
-        <div class="nested" id="Wednesday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">WED</h1>
+            <div class="well" id="WednesdayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Wednesday"></div>
+          </div>
         </div>
-        <h2 id="WednesdayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">THU</h1>
-        <div class="nested" id="Thursday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">THU</h1>
+            <div class="well" id="ThursdayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Thursday"></div>
+          </div>
         </div>
-        <h2 id="ThursdayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">FRI</h1>
-        <div class="nested" id="Friday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">FRI</h1>
+            <div class="well" id="FridayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Friday"></div>
+          </div>
         </div>
-        <h2 id="FridayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">SAT</h1>
-        <div class="nested" id="Saturday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">SAT</h1>
+            <div class="well" id="SaturdayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Saturday"></div>
+          </div>
         </div>
-        <h2 id="SaturdayCount"></h2>
-      </div>
-      <div class="card">
-        <h1 class="chead">SUN</h1>
-        <div class="nested" id="Sunday">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="chead">SUN</h1>
+            <div class="well" id="SundayCount"></div>
+          </div>
+          <div class="panel-body">
+            <div class="nested" id="Sunday"></div>
+          </div>
         </div>
-        <h2 id="SundayCount"></h2>
       </div>
     </div>
     <br><br>
     <div class="row">
-      <textarea id="myTextarea" rows="27" cols="180"></textarea>
-      <div>
-        <h1 class="yhead">Year <span class="sub">(In which you want to find the day of your birthday.)</span></h1>
-        <input type="number" name="year" class="yhead" id="yearVal" required>
+      <div class="col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1">
+        <textarea id="myTextarea" rows="27" class="form-control" placeholder="Enter a valid JSON Data or else copy the data by clicking the 'Copy to clipboard' button below"></textarea>
+      </div>
+      <div class="col-md-5 col-sm-5">
+        <h1 class="yhead">Year :</h1>
+        <input type="number" name="year" class="form-control" id="yearVal" placeholder="In which you want to find the day of your birthday." required>
         <br><br>
-        <h1 class="yhead">Name <span class="sub">(FN LN)</span></h1>
-        <input type="text" name="name" class="yhead" id="nameVal" required>
+        <h1 class="yhead">Name :</h1>
+        <input type="text" name="name" class="form-control" id="nameVal" placeholder="(FN LN)" required>
         <br><br>
-        <h1 class="yhead">BirthDate</h1>
-        <input type="date" name="birth" class="yhead" id="birthVal" required>
+        <h1 class="yhead">Birthdate :</h1>
+        <input type="date" name="birth" class="form-control" id="birthVal" placeholder="Select Year Birthdate" required>
         <br><br>
-        <button type="button" class="button" id="myLink" class="updateButton" href="js/main.js">UPDATE</button>
-        <button type="button" class="button" id="myLink1" class="updateButton" href="js/read.js">Create JSON</button>
+        <a class="btn btn-primary" id="myLink">UPDATE</a>
+        <a class="btn btn-primary" id="myLink1">Create JSON</a>
       </div>
     </div>
-    <br><br><br>
-    <div id="copymessage"><strong>Note: </strong><br><strong>1. </strong>If you know the JSON format enter the year and the vald JSON and press UPDATE to get the birthday plotted in the proper day card.<br>
-      <strong>2. </strong>Else enter the year , Name, Birthdate and click on create JSON to get the birthday plotted in the proper day card.<br>
-      <strong>3. </strong>Else press the below button and copy the sample JSON data and paste it in the above textarea and enter the year and press UPDATE to get the birthday plotted in the proper day card.<br><br>
+    <br><br>
+    <div class="row">
+      <div class="container">
+        <div id="copymessage"><strong>Note: </strong><br><strong>1. </strong>If you know the JSON format enter the year and the vald JSON and press UPDATE to get the birthday plotted in the proper day card.<br>
+          <strong>2. </strong>Else enter the year , Name, Birthdate and click on create JSON to get the birthday plotted in the proper day card.<br>
+          <strong>3. </strong>Else press the below button and copy the sample JSON data and paste it in the above textarea and enter the year and press UPDATE to get the birthday plotted in the proper day card.<br><br>
+        </div>
+        <a class="btn btn-primary updateButton" data-clipboard-text='[{
+          "name": "Tyrion Lannister",
+          "birthday": "12/02/1978"
+          }, {
+          "name": "Cersei Lannister",
+          "birthday": "11/30/1975"
+          }, {
+          "name": "Daenerys Targaryen",
+          "birthday": "11/24/1991"
+          }, {
+          "name": "Arya Stark",
+          "birthday": "11/25/1996"
+          }, {
+          "name": "Jon Snow",
+          "birthday": "12/03/1989"
+          }, {
+          "name": "Sansa Stark",
+          "birthday": "12/08/1992"
+          }
+          ]'>
+        Copy to clipboard
+        </a>
+      </div>
+      <hr>
     </div>
-    <br>
-    <button class="updateButton button" data-clipboard-text='[{
-      "name": "Tyrion Lannister",
-      "birthday": "12/02/1978"
-      }, {
-      "name": "Cersei Lannister",
-      "birthday": "11/30/1975"
-      }, {
-      "name": "Daenerys Targaryen",
-      "birthday": "11/24/1991"
-      }, {
-      "name": "Arya Stark",
-      "birthday": "11/25/1996"
-      }, {
-      "name": "Jon Snow",
-      "birthday": "12/03/1989"
-      }, {
-      "name": "Sansa Stark",
-      "birthday": "12/08/1992"
-      }
-      ]'>
-    Copy to clipboard
-    </button>
-    </textarea>
-    <hr>
     <footer>
       <div class="container">
         <p><a href="https://virtuosars.github.io/ArsS/">Ankush Sankhe</a></p>

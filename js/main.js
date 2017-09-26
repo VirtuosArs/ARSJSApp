@@ -37,8 +37,7 @@ myLink.onclick = function magicFlow() {
           } else {
             var fragment = create(count + " birthdays");
           }
-          document.getElementById(weekday[i] + "Count").appendChild(
-            fragment);
+          document.getElementById(weekday[i] + "Count").appendChild(fragment);
         }
       }
       action = 2;

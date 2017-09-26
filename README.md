@@ -1,6 +1,6 @@
 # ARS Birthday Cal App
 
-This is a simple app which reads the json data from the textarea and the year entered by the user and accordingly plots the birthday in the proper day card with the initials of the name and the count of the birthdays for the particular day.
+This is a simple app which plots the birthdate in proper day card or reads the json data from the textarea and the year entered by the user and accordingly plots the birthday in the proper day card with the initials of the name and the count of the birthdays for the particular day.
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ In order to install chrome you can refer the following site and follow the insta
 ## How to Run
 
 * In order to see the website you just need to open the `index.html` file in your browser.
-* If you dont have the json data you can use the sample data in `birthdays.json`.
+* If you dont have the json data you can use the sample data in `birthdays.json` or copy the data by clicking on the `Copy to clipboard` button.
 Sample json data format
 [
     {
