@@ -83,7 +83,17 @@ h2 {
     grid-auto-rows: minmax(100px, auto);
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1197px) {
+    #wrapper {
+    font-family: calibri;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+}
+
+@media screen and (max-width: 990px) {
     #wrapper {
     font-family: calibri;
     display: grid;
@@ -93,7 +103,7 @@ h2 {
 }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 620px) {
     #wrapper {
     font-family: calibri;
     display: grid;
@@ -103,7 +113,7 @@ h2 {
 }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     #wrapper {
     font-family: calibri;
     display: grid;
@@ -111,6 +121,10 @@ h2 {
     grid-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
 }
+}
+
+#ttip {
+    color: #fff;
 }
 
 .nested {
@@ -128,6 +142,7 @@ h2 {
 .posts {
     font-weight: bold;
     color: #fff;
+    background-color: #800000;
 }
 
 .chead {

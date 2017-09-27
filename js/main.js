@@ -124,8 +124,10 @@ myLink.onclick = function magicFlow() {
       var pos = jsonObj[i].birthday.indexOf("/");
       var monthNumber = jsonObj[i].birthday.substr(0, pos);
       var yearNum = jsonObj[i].birthday.lastIndexOf("/");
+      var tyear = jsonObj[i].birthday.substr(yearNum + 1, jsonObj[i].birthday.length);
       var dnum = jsonObj[i].birthday.substr(pos + 1, 2);
       var ds = yearNumber + "-" + monthNumber + "-" + dnum;
+      var tdate = dnum + "/" + monthNumber + "/" + tyear;
       var dayName = getDay(ds);
       jsonObj[i].Day = dayName;
       var spos = jsonObj[i].name.indexOf(" ");
@@ -136,7 +138,7 @@ myLink.onclick = function magicFlow() {
       var initials = fI + lI;
       var dId = 'posts' + initials;
       var fragment = create('<div id="' + dId +
-        '" class="posts">' + initials + '</div>');
+        '" class="posts"><a id="ttip" href="#" data-toggle="tooltip" title="'+jsonObj[i].name+'\nBirthday : '+tdate+'">' + initials + '</a></div>');
       document.getElementById(dayName).appendChild(fragment);
       ran_col(dId);
     }

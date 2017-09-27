@@ -1,6 +1,6 @@
 # ARS Birthday Cal App
 
-This is a simple app which plots the birthdate in proper day card or reads the json data from the textarea and the year entered by the user and accordingly plots the birthday in the proper day card with the initials of the name and the count of the birthdays for the particular day.
+This is a simple app which plots the birthdate in proper day card or reads the json data from the textarea and the year entered by the user and accordingly plots the birthday in the proper day card with the initials of the name along with there information in tootltip and the count of the birthdays for the particular day.
 
 ## Getting Started
 

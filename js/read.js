@@ -103,7 +103,7 @@ clipboard.on('success', function(e) {
   console.info('Trigger:', e.trigger);
   var dataDiv = document.getElementById("copymessage");
   dataDiv.insertAdjacentHTML('beforeend',
-    "JSON data successfully Copied");
+    "Sample JSON data successfully Copied");
   e.clearSelection();
 });
 
