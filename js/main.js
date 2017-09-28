@@ -70,7 +70,7 @@ myLink.onclick = function magicFlow() {
     var jsonObj1 = document.getElementById("myTextarea").value;
     if (jsonObj1 == "") {
       if (confirm(
-          "1. Please enter json data or\n2. Copy the sample JSON data by clicking on the 'Copy to Clickboard' button or \n3. Enter your name and birthdate and click on 'Create JSON' to create a valid JSON"
+          "1. Please enter json data or\n2. Copy the sample JSON data by clicking on the 'Copy Sample JSON' button or \n3. Enter your name and birthdate and click on 'Plot Your Birthday'"
         ) == true) {
         document.getElementById('myTextarea').style.border =
           "thin solid red";
@@ -138,7 +138,7 @@ myLink.onclick = function magicFlow() {
       var initials = fI + lI;
       var dId = 'posts' + initials;
       var fragment = create('<div id="' + dId +
-        '" class="posts"><a id="ttip" href="#" data-toggle="tooltip" title="'+jsonObj[i].name+'\nBirthday : '+tdate+'">' + initials + '</a></div>');
+        '" class="posts"><a id="ttip" href="#" data-toggle="tooltip" title="'+jsonObj[i].name+'\nBirthday : '+tdate+'\nDay : '+dayName+'">' + initials + '</a></div>');
       document.getElementById(dayName).appendChild(fragment);
       ran_col(dId);
     }

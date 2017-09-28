@@ -24,6 +24,30 @@
     <h2>Find the day in which your birthday comes in any year!!!</h2>
     <hr>
     <br><br>
+    <div class="container search_bottom_pd search_panel">
+      <div class="container_inner">
+        <div class="container_ars well">
+        <h3 class="text-center">Find the day in which your birthday comes in any year!!!</h3>
+        <div class="col-sm-2 col-xs-6 col-md-offset-2 col-sm-offset-2 pd_0">
+        <h5 class="headB">Year :</h5>
+        <input type="number" name="year" class="form-control" id="yearVal" placeholder="2017" required>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+        <h5 class="headB">Name :</h5>
+        <input type="text" name="name" class="form-control" id="nameVal" placeholder="(FN LN)" required>
+        </div>
+        <div class="col-sm-2 col-xs-6 pd_0">
+        <h5 class="pd_0 headB">Birthdate :</h5>
+        <input type="date" name="birth" class="form-control" id="birthVal" placeholder="Select Year Birthdate" required>
+        </div>
+        <div class="col-sm-2 col-xs-6 ubutton">
+        <h5 class="headB ubutton">Update :</h5>
+        <input type="button" class="btn btn-primary" id="myLink1" value="Plot Your Birthday">
+        </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div id="wrapper">
         <div class="panel panel-default">
@@ -96,55 +120,55 @@
       <div class="col-md-5 col-sm-5 col-md-offset-1 col-sm-offset-1">
         <textarea id="myTextarea" rows="27" class="form-control" placeholder="Enter a valid JSON Data or else copy the data by clicking the 'Copy to clipboard' button below"></textarea>
       </div>
-      <div class="col-md-5 col-sm-5">
-        <h1 class="yhead">Year :</h1>
-        <input type="number" name="year" class="form-control" id="yearVal" placeholder="In which you want to find the day of your birthday." required>
-        <br><br>
-        <h1 class="yhead">Name :</h1>
-        <input type="text" name="name" class="form-control" id="nameVal" placeholder="(FN LN)" required>
-        <br><br>
-        <h1 class="yhead">Birthdate :</h1>
-        <input type="date" name="birth" class="form-control" id="birthVal" placeholder="Select Year Birthdate" required>
-        <br><br>
+      <div class="col-md-5 col-sm-5 upd">&nbsp&nbsp
         <a class="btn btn-primary" id="myLink">UPDATE</a>
-        <a class="btn btn-primary" id="myLink1">Create JSON</a>
-      </div>
-    </div>
-    <br><br>
-    <div class="row">
-      <div class="container">
-        <div id="copymessage"><strong>Note: </strong><br><strong>1. </strong>If you know the JSON format enter the year and the vald JSON and press UPDATE to get the birthday plotted in the proper day card.<br>
-          <strong>2. </strong>Else enter the year , Name, Birthdate and click on create JSON to get the birthday plotted in the proper day card.<br>
-          <strong>3. </strong>Else press the below button and copy the sample JSON data and paste it in the above textarea and enter the year and press UPDATE to get the birthday plotted in the proper day card.<br><br>
+        <br><br>
+        <div class="well">
+          <div id="copymessage"><strong>Note: </strong><br><strong>1. </strong>If you know the JSON format enter the year and the vald JSON and press UPDATE to get the birthday plotted in the proper day card.<br><br>
+          <strong>2. </strong>Else enter the year , Name, Birthdate and click on 'Plot your Birthday' to get the birthday plotted in the proper day card.<br><br>
+          <strong>3. </strong>Else press the below button and copy the sample JSON data and paste it in the given textarea and enter the year and press UPDATE to get the birthday plotted in the proper day card.<br><br>
+
+          <a class="btn btn-primary updateButton" data-clipboard-text='[{
+            "name": "Tyrion Lannister",
+            "birthday": "12/02/1978"
+            }, {
+            "name": "Cersei Lannister",
+            "birthday": "11/30/1975"
+            }, {
+            "name": "Daenerys Targaryen",
+            "birthday": "11/24/1991"
+            }, {
+            "name": "Arya Stark",
+            "birthday": "11/25/1996"
+            }, {
+            "name": "Jon Snow",
+            "birthday": "12/03/1989"
+            }, {
+            "name": "Sansa Stark",
+            "birthday": "12/08/1992"
+            }
+            ]'>
+          Copy Sample JSON
+          </a>
+          <br><br>
+          </div>
         </div>
-        <a class="btn btn-primary updateButton" data-clipboard-text='[{
-          "name": "Tyrion Lannister",
-          "birthday": "12/02/1978"
-          }, {
-          "name": "Cersei Lannister",
-          "birthday": "11/30/1975"
-          }, {
-          "name": "Daenerys Targaryen",
-          "birthday": "11/24/1991"
-          }, {
-          "name": "Arya Stark",
-          "birthday": "11/25/1996"
-          }, {
-          "name": "Jon Snow",
-          "birthday": "12/03/1989"
-          }, {
-          "name": "Sansa Stark",
-          "birthday": "12/08/1992"
-          }
-          ]'>
-        Copy Sample JSON Data
-        </a>
+        <div class="well jdata">
+          <div><strong>Valid JSON Data Example</strong></div>
+          <div>
+            [{<br>
+            "name": "Sachin Tendulkar",<br>
+            "birthday": "04/23/1973"<br>
+            }<br>
+            ]<br>
+          </div>
+        </div>
       </div>
-      <hr>
     </div>
+    <hr>
     <footer>
       <div class="container">
-        <p><a href="https://virtuosars.github.io/ArsS/">Ankush Sankhe</a></p>
+        <p>Copyright &copy <a href="https://virtuosars.github.io/ArsS/">Ankush Sankhe</a></p>
       </div>
     </footer>
     <script type="text/javascript" src="js/main.js"></script>

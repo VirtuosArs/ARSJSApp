@@ -25,6 +25,11 @@
     font-size: 36px;
 }
 
+.headB {
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
 .yhead {
     font-weight: bold;
     font-size: 36px;
@@ -48,10 +53,6 @@ h2 {
     /* font-size: 18px; */
     font-weight: bold;
     text-align: center;
-}
-
-#birthVal {
-    width: 50%;
 }
 
 #mainbox {
@@ -155,6 +156,49 @@ h2 {
     font-weight: lighter;
     color: #4d4d4d;
     font-size: 23px;
+}
+
+.search_bottom_pd {
+    padding-bottom: 30px;
+}
+
+.container_ars {
+    border-radius: 3px;
+    color: #fff!important;
+    padding: 15px 19px 0;
+    padding-bottom: 27px;
+    overflow: hidden;
+}
+
+.pd_0, .ubutton {
+    padding: 0;
+}
+
+@media screen and (max-width: 984px) {
+    .ubutton {
+    padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    #myLink1 {
+    font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .upd {
+    margin-top: 18px;
+    }
+}
+
+#copymessage, .jdata{
+    text-align: left;
+    font-weight: normal;
+}
+
+.updateButton {
+    float: left;
 }
 
 footer {

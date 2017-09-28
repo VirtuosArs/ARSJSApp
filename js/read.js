@@ -22,7 +22,7 @@ myLink.onclick = function createJSON() {
   function nameRequired() {
     if (document.getElementById('nameVal').value == "") {
       if (confirm(
-          "Press enter your name and birthdate and click on 'Create JSON' to create a valid JSON data."
+          "Press enter your name and birthdate and click on 'Plot Your Birthday'."
         ) == true) {
         document.getElementById('nameVal').style.border =
           "thin solid red"
@@ -40,7 +40,7 @@ myLink.onclick = function createJSON() {
   function birthdayRequired() {
     if (document.getElementById('birthVal').value == "") {
       if (confirm(
-          "Please select your birthdate and click on 'Create JSON' to create a valid JSON."
+          "Please select your birthdate and click on 'Plot Your Birthday'."
         ) == true) {
         document.getElementById('birthVal').style.border =
           "thin solid red"
