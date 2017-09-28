@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha tests</title>
+  <link rel="stylesheet" media="all" href="vendor/mocha.css">
+  <style type="text/css">
+    .disp { display: none; }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="mocha"><p>Result</p></div>
+  <input type="hidden" name="year" class="form-control" id="yearVal" placeholder="2017" required>
+  <input type="hidden" id="myTextarea" rows="27" class="form-control" placeholder="Enter a valid JSON Data or else copy the data by clicking the 'Copy to clipboard' button below">
+  <div class="nested" id="Monday"></div>
+  <div class="well disp" id="MondayCount"></div>
+  <div class="nested" id="Tuesday"><div></div></div>
+  <div class="well disp" id="TuesdayCount"></div>
+  <div class="nested" id="Wednesday"><div></div><div></div></div>
+  <div class="well disp" id="WednesdayCount"></div>
+  <script src="vendor/mocha.js"></script>
+  <script src="vendor/chai.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="testTDD.js"></script>
+  <script>mocha.run();</script>
+</body>
+</html>
